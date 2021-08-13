@@ -2,11 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
-brave_path = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
+browser_path = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
 driver_path = "C:/Users/Shreedhar/Desktop/chromedriver_win32/chromedriver.exe"
 
 option = webdriver.ChromeOptions()
-option.binary_location = brave_path
+option.binary_location = browser_path
 
 driver = webdriver.Chrome(executable_path= driver_path, chrome_options= option)
 
